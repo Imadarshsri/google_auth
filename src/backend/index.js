@@ -46,7 +46,9 @@ app.get("", (req, res) => {
 app.get('/success', (req, res) => {
   console.log("Success", req.session.passport.user);
   res.render('success', {
-    user: req.session.passport.user
+    user: req.session.passport.user,
+    title: "Google Auth OAuth2.0 Cloud Service",
+    name: "Adarsh Srivastava",
   });
 });
 
