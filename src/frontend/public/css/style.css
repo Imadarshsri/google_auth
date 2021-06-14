@@ -1,0 +1,108 @@
+body {
+  color: #333333;
+  font-family: arial;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+footer {
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  margin-top: 8px;
+  font-size: 16px;
+  padding: 16px 0;
+  text-align: center;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+header a {
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.portrait {
+  width: 150px;
+  border-radius: 50%;
+}
+
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
+  background: #888888;
+  color: white;
+  padding: 8px;
+}
+
+#error {
+  color: red;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+#result {
+  color: green;
+}
+
+/* Card */
+.all_books {
+  padding: 2px 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border: 2px solid #e7e7e7;
+  border-radius: 20px;
+  padding: .5rem;
+  padding-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow:
+    0 8px 16px 0 rgba(50, 50, 50, 0.4);
+}
+
+div p.rating {
+  font-size: 16px;
+  font-weight: bold;
+}

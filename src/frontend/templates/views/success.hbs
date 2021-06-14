@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Google SignIn</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="main-content">
+    {{>header}}
+
+    <h1> Profile Information</h1>
+    <img class="portrait" src={{ user._json.picture }}>
+    <p> Id: <strong>{{ user.id }}</strong> </p>
+    <p>Email: <strong>{{ user._json.email }}</strong> </p>
+    <p>Name: <strong>{{ user.displayName }}</strong> </p>
+
+    <a href="/logout" class="btn btn-danger"><span class="fa fa-google"></span> Log out </a>
+
+    {{>footer}}
+  </div>
+</body>
+
+</html>

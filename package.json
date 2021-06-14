@@ -9,16 +9,17 @@
     "ejs": "^3.1.2",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
+    "hbs": "^4.1.2",
     "passport": "^0.4.1",
-    "passport-google-oauth": "^2.0.0"
+    "passport-google-oauth": "^2.0.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
   },
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node src/backend/index.js",
+    "dev": "nodemon src/backend/index.js -e js,hbs"
   },
-  "author": "Puneet Singh",
-  "license": "ISC"
+  "author": "Adarsh Srivastava"
 }

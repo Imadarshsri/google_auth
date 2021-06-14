@@ -1,22 +1,27 @@
-<!-- views/auth.ejs -->
 <!doctype html>
 <html>
 
 <head>
-    <title>Google SignIn</title>
+    <title>Google SignIn/Signup</title>
+    <link rel="icon" href="/img/book.png">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="main-content">
+        {{> header}}
+
         <div class="jumbotron text-center text-primary">
-            <h1><span class="fa fa-lock"></span> Social Authentication</h1>
             <p>Login or Register</p>
-            <a href="/auth/google" class="btn btn-danger"><span class="fa fa-google"></span> SignIn/SignUp with
+            <a href="/auth/google" class="btn btn-dark"><span class="fa fa-google"></span> SignIn/SignUp with
                 Google</a>
         </div>
     </div>
+
+    {{>footer}}
+
 </body>
 
 </html>
