@@ -12,12 +12,10 @@ const port = process.env.PORT || 5000;
 //Configure Passport
 app.use(passport.initialize());
 app.use(passport.session());
-/// Adds json decoding
+/// Adds json decoding 
 app.use(express.json());
 
-
-// app.set('view engine', 'ejs');
-
+// Adding session
 app.use(session({
   resave: true,
   saveUninitialized: true,
@@ -36,10 +34,6 @@ hbs.registerPartials(partialsPath);
 
 // Setup static to serve
 app.use(express.static(publicDirectoryPath));
-
-// app.get('/', function (req, res) {
-//   res.render('pages/auth');
-// });
 
 app.get("", (req, res) => {
   res.render("auth", {
